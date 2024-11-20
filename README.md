@@ -34,6 +34,7 @@ Clone the repository to your local machine using the following command:
 ```bash
 git clone <repository-url>
 cd <repository-directory>
+```
 
 ### Step 2: Build Docker Images
 
@@ -41,6 +42,7 @@ Use the provided build_images.sh script to build two Docker images with differen
 
 ```bash
 ./build_images.sh
+```
 
 ### Step 3: Run the Playbook
 
@@ -62,6 +64,6 @@ ok: [localhost] => {
 
 PLAY RECAP *********************************************************************
 localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-
+```
 
 

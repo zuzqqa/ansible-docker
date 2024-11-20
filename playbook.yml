@@ -1,0 +1,11 @@
+---
+- name: Demonstration playbook
+  hosts: localhost  # Run the tasks on the local machine
+  tasks:
+    - name: Show the current Python version
+      command: python --version  # Run the 'python --version' command to get the Python version
+      register: python_version  # Store the output of the command in the variable 'python_version'
+
+    - name: Show the current Python version
+      debug:
+        var: python_version.stdout_lines  # Display the stored output of the previous task
